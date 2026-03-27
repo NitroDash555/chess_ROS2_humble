@@ -1,0 +1,102 @@
+[0.015s] Invoking command in '/chess_ROS2_humble/ros2_ws/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /chess_ROS2_humble/ros2_ws/build/interfaces -- -j20 -l20
+[0.311s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.311s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.311s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.311s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.311s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.311s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.311s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.311s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.472s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.669s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.752s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.771s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.788s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.788s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.788s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.797s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.807s] -- Added test 'lint_cmake' to check CMake code style
+[0.808s] -- Added test 'xmllint' to check XML markup files
+[0.811s] -- Configuring done
+[0.848s] -- Generating done
+[0.854s] -- Build files have been written to: /chess_ROS2_humble/ros2_ws/build/interfaces
+[0.873s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.881s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.885s] [  4%] Built target ament_cmake_python_copy_interfaces
+[1.038s] running egg_info
+[1.039s] writing interfaces.egg-info/PKG-INFO
+[1.039s] writing dependency_links to interfaces.egg-info/dependency_links.txt
+[1.039s] writing top-level names to interfaces.egg-info/top_level.txt
+[1.041s] reading manifest file 'interfaces.egg-info/SOURCES.txt'
+[1.042s] writing manifest file 'interfaces.egg-info/SOURCES.txt'
+[1.061s] [  4%] Built target ament_cmake_python_build_interfaces_egg
+[1.156s] [  4%] Built target interfaces__cpp
+[1.162s] [  6%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.163s] [35m[1mConsolidate compiler generated dependencies of target interfaces__rosidl_generator_c[0m
+[1.164s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.164s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.174s] [ 14%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/detail/move__functions.c.o[0m
+[1.174s] [ 14%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/detail/get_move__functions.c.o[0m
+[1.176s] [ 17%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/detail/get_fen__functions.c.o[0m
+[1.266s] [ 19%] [32m[1mLinking C shared library libinterfaces__rosidl_generator_c.so[0m
+[1.304s] [ 19%] Built target interfaces__rosidl_generator_c
+[1.311s] [ 23%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.311s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.313s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.371s] [35m[1mConsolidate compiler generated dependencies of target interfaces__rosidl_typesupport_cpp[0m
+[1.385s] [ 27%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/srv/get_move__type_support.cpp.o[0m
+[1.385s] [ 29%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/srv/move__type_support.cpp.o[0m
+[1.387s] [ 31%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/srv/get_fen__type_support.cpp.o[0m
+[1.388s] [35m[1mConsolidate compiler generated dependencies of target interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.407s] [ 34%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/srv/detail/move__type_support.cpp.o[0m
+[1.410s] [ 38%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/srv/detail/get_move__type_support.cpp.o[0m
+[1.410s] [ 38%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/srv/detail/get_fen__type_support.cpp.o[0m
+[1.439s] [35m[1mConsolidate compiler generated dependencies of target interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[1.453s] [ 40%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/get_fen__type_support.cpp.o[0m
+[1.454s] [ 42%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/move__type_support.cpp.o[0m
+[1.456s] [ 44%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/get_move__type_support.cpp.o[0m
+[1.511s] [35m[1mConsolidate compiler generated dependencies of target interfaces__rosidl_typesupport_c[0m
+[1.520s] [ 46%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/srv/get_fen__type_support.cpp.o[0m
+[1.521s] [ 48%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/srv/move__type_support.cpp.o[0m
+[1.521s] [ 51%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/srv/get_move__type_support.cpp.o[0m
+[1.550s] [ 53%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so[0m
+[1.586s] [ 53%] Built target interfaces__rosidl_typesupport_c
+[1.656s] [35m[1mConsolidate compiler generated dependencies of target interfaces__rosidl_typesupport_introspection_c[0m
+[1.666s] [ 59%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/srv/detail/get_move__type_support.c.o[0m
+[1.666s] [ 59%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/srv/detail/get_fen__type_support.c.o[0m
+[1.666s] [ 59%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/srv/detail/move__type_support.c.o[0m
+[1.696s] [ 61%] [32m[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so[0m
+[1.709s] [35m[1mConsolidate compiler generated dependencies of target interfaces__rosidl_typesupport_fastrtps_c[0m
+[1.725s] [ 61%] Built target interfaces__rosidl_typesupport_introspection_c
+[1.726s] [ 65%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/srv/detail/move__type_support_c.cpp.o[0m
+[1.726s] [ 65%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/srv/detail/get_fen__type_support_c.cpp.o[0m
+[1.726s] [ 68%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/srv/detail/get_move__type_support_c.cpp.o[0m
+[1.750s] [ 70%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so[0m
+[1.801s] [ 70%] Built target interfaces__rosidl_typesupport_cpp
+[1.900s] [ 72%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so[0m
+[1.901s] [ 74%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.952s] [ 74%] Built target interfaces__rosidl_typesupport_introspection_cpp
+[1.968s] [ 74%] Built target interfaces__rosidl_typesupport_fastrtps_cpp
+[1.992s] [ 76%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so[0m
+[2.038s] [ 76%] Built target interfaces__rosidl_typesupport_fastrtps_c
+[2.053s] [ 76%] Built target interfaces
+[2.068s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.420s] [ 78%] Built target interfaces__py
+[2.426s] [35m[1mConsolidate compiler generated dependencies of target interfaces__rosidl_generator_py[0m
+[2.435s] [ 80%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/srv/_get_fen_s.c.o[0m
+[2.436s] [ 82%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/srv/_move_s.c.o[0m
+[2.437s] [ 85%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/srv/_get_move_s.c.o[0m
+[2.531s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/libinterfaces__rosidl_generator_py.so[0m
+[2.559s] [ 87%] Built target interfaces__rosidl_generator_py
+[2.566s] [35m[1mConsolidate compiler generated dependencies of target interfaces__rosidl_typesupport_c__pyext[0m
+[2.568s] [35m[1mConsolidate compiler generated dependencies of target interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[2.568s] [35m[1mConsolidate compiler generated dependencies of target interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[2.577s] [ 89%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[2.579s] [ 93%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.579s] [ 93%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.651s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.653s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.655s] [100%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.676s] [100%] Built target interfaces__rosidl_typesupport_c__pyext
+[2.676s] [100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext
+[2.679s] [100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext

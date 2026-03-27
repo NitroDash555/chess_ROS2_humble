@@ -1,0 +1,3 @@
+[console_scripts]
+stockfish_node = stockfish_node.stockfish_node:main
+

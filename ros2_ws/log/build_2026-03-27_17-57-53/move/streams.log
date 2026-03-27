@@ -1,0 +1,24 @@
+[0.754s] Invoking command in '/chess_ROS2_humble/ros2_ws/src/move': LD_LIBRARY_PATH=/chess_ROS2_humble/ros2_ws/install/interfaces/lib:/chess_ROS2_humble/ros2_ws/install/comp_vision_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/chess_ROS2_humble/ros2_ws/build/move/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/chess_ROS2_humble/ros2_ws/install/move/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/move build --build-base /chess_ROS2_humble/ros2_ws/build/move/build install --record /chess_ROS2_humble/ros2_ws/build/move/install.log --single-version-externally-managed install_data
+[0.914s] running egg_info
+[0.914s] writing ../../build/move/move.egg-info/PKG-INFO
+[0.915s] writing dependency_links to ../../build/move/move.egg-info/dependency_links.txt
+[0.915s] writing entry points to ../../build/move/move.egg-info/entry_points.txt
+[0.915s] writing requirements to ../../build/move/move.egg-info/requires.txt
+[0.915s] writing top-level names to ../../build/move/move.egg-info/top_level.txt
+[0.916s] reading manifest file '../../build/move/move.egg-info/SOURCES.txt'
+[0.916s] writing manifest file '../../build/move/move.egg-info/SOURCES.txt'
+[0.916s] running build
+[0.917s] running build_py
+[0.917s] copying move/move.py -> /chess_ROS2_humble/ros2_ws/build/move/build/lib/move
+[0.917s] running install
+[0.917s] running install_lib
+[0.917s] copying /chess_ROS2_humble/ros2_ws/build/move/build/lib/move/move.py -> /chess_ROS2_humble/ros2_ws/install/move/lib/python3.10/site-packages/move
+[0.918s] byte-compiling /chess_ROS2_humble/ros2_ws/install/move/lib/python3.10/site-packages/move/move.py to move.cpython-310.pyc
+[0.918s] running install_data
+[0.918s] running install_egg_info
+[0.920s] removing '/chess_ROS2_humble/ros2_ws/install/move/lib/python3.10/site-packages/move-0.0.0-py3.10.egg-info' (and everything under it)
+[0.920s] Copying ../../build/move/move.egg-info to /chess_ROS2_humble/ros2_ws/install/move/lib/python3.10/site-packages/move-0.0.0-py3.10.egg-info
+[0.920s] running install_scripts
+[0.936s] Installing move script to /chess_ROS2_humble/ros2_ws/install/move/lib/move
+[0.936s] writing list of installed files to '/chess_ROS2_humble/ros2_ws/build/move/install.log'
+[0.953s] Invoked command in '/chess_ROS2_humble/ros2_ws/src/move' returned '0': LD_LIBRARY_PATH=/chess_ROS2_humble/ros2_ws/install/interfaces/lib:/chess_ROS2_humble/ros2_ws/install/comp_vision_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/chess_ROS2_humble/ros2_ws/build/move/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/chess_ROS2_humble/ros2_ws/install/move/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/move build --build-base /chess_ROS2_humble/ros2_ws/build/move/build install --record /chess_ROS2_humble/ros2_ws/build/move/install.log --single-version-externally-managed install_data

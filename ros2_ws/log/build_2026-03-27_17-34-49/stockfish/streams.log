@@ -1,0 +1,39 @@
+[0.885s] Invoking command in '/chess_ROS2_humble/ros2_ws/src/stockfish': PYTHONPATH=/chess_ROS2_humble/ros2_ws/build/stockfish/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/chess_ROS2_humble/ros2_ws/install/stockfish/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stockfish build --build-base /chess_ROS2_humble/ros2_ws/build/stockfish/build install --record /chess_ROS2_humble/ros2_ws/build/stockfish/install.log --single-version-externally-managed install_data
+[1.035s] running egg_info
+[1.036s] creating ../../build/stockfish/stockfish.egg-info
+[1.036s] writing ../../build/stockfish/stockfish.egg-info/PKG-INFO
+[1.036s] writing dependency_links to ../../build/stockfish/stockfish.egg-info/dependency_links.txt
+[1.038s] writing entry points to ../../build/stockfish/stockfish.egg-info/entry_points.txt
+[1.038s] writing requirements to ../../build/stockfish/stockfish.egg-info/requires.txt
+[1.038s] writing top-level names to ../../build/stockfish/stockfish.egg-info/top_level.txt
+[1.038s] writing manifest file '../../build/stockfish/stockfish.egg-info/SOURCES.txt'
+[1.038s] reading manifest file '../../build/stockfish/stockfish.egg-info/SOURCES.txt'
+[1.038s] writing manifest file '../../build/stockfish/stockfish.egg-info/SOURCES.txt'
+[1.038s] running build
+[1.039s] running build_py
+[1.039s] creating /chess_ROS2_humble/ros2_ws/build/stockfish/build
+[1.039s] creating /chess_ROS2_humble/ros2_ws/build/stockfish/build/lib
+[1.039s] creating /chess_ROS2_humble/ros2_ws/build/stockfish/build/lib/stockfish
+[1.039s] copying stockfish/__init__.py -> /chess_ROS2_humble/ros2_ws/build/stockfish/build/lib/stockfish
+[1.039s] copying stockfish/stockfish.py -> /chess_ROS2_humble/ros2_ws/build/stockfish/build/lib/stockfish
+[1.039s] running install
+[1.039s] running install_lib
+[1.040s] creating /chess_ROS2_humble/ros2_ws/install/stockfish/lib/python3.10/site-packages/stockfish
+[1.040s] copying /chess_ROS2_humble/ros2_ws/build/stockfish/build/lib/stockfish/__init__.py -> /chess_ROS2_humble/ros2_ws/install/stockfish/lib/python3.10/site-packages/stockfish
+[1.040s] copying /chess_ROS2_humble/ros2_ws/build/stockfish/build/lib/stockfish/stockfish.py -> /chess_ROS2_humble/ros2_ws/install/stockfish/lib/python3.10/site-packages/stockfish
+[1.040s] byte-compiling /chess_ROS2_humble/ros2_ws/install/stockfish/lib/python3.10/site-packages/stockfish/__init__.py to __init__.cpython-310.pyc
+[1.040s] byte-compiling /chess_ROS2_humble/ros2_ws/install/stockfish/lib/python3.10/site-packages/stockfish/stockfish.py to stockfish.cpython-310.pyc
+[1.040s] running install_data
+[1.040s] creating /chess_ROS2_humble/ros2_ws/install/stockfish/share
+[1.040s] creating /chess_ROS2_humble/ros2_ws/install/stockfish/share/ament_index
+[1.040s] creating /chess_ROS2_humble/ros2_ws/install/stockfish/share/ament_index/resource_index
+[1.040s] creating /chess_ROS2_humble/ros2_ws/install/stockfish/share/ament_index/resource_index/packages
+[1.041s] copying resource/stockfish -> /chess_ROS2_humble/ros2_ws/install/stockfish/share/ament_index/resource_index/packages
+[1.041s] creating /chess_ROS2_humble/ros2_ws/install/stockfish/share/stockfish
+[1.041s] copying package.xml -> /chess_ROS2_humble/ros2_ws/install/stockfish/share/stockfish
+[1.041s] running install_egg_info
+[1.042s] Copying ../../build/stockfish/stockfish.egg-info to /chess_ROS2_humble/ros2_ws/install/stockfish/lib/python3.10/site-packages/stockfish-0.0.0-py3.10.egg-info
+[1.042s] running install_scripts
+[1.059s] Installing stockfish script to /chess_ROS2_humble/ros2_ws/install/stockfish/lib/stockfish
+[1.059s] writing list of installed files to '/chess_ROS2_humble/ros2_ws/build/stockfish/install.log'
+[1.078s] Invoked command in '/chess_ROS2_humble/ros2_ws/src/stockfish' returned '0': PYTHONPATH=/chess_ROS2_humble/ros2_ws/build/stockfish/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/chess_ROS2_humble/ros2_ws/install/stockfish/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stockfish build --build-base /chess_ROS2_humble/ros2_ws/build/stockfish/build install --record /chess_ROS2_humble/ros2_ws/build/stockfish/install.log --single-version-externally-managed install_data

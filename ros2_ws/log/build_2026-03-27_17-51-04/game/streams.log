@@ -1,0 +1,21 @@
+[0.863s] Invoking command in '/chess_ROS2_humble/ros2_ws/src/game': PYTHONPATH=/chess_ROS2_humble/ros2_ws/build/game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/chess_ROS2_humble/ros2_ws/install/game/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/game build --build-base /chess_ROS2_humble/ros2_ws/build/game/build install --record /chess_ROS2_humble/ros2_ws/build/game/install.log --single-version-externally-managed install_data
+[1.022s] running egg_info
+[1.022s] writing ../../build/game/game.egg-info/PKG-INFO
+[1.023s] writing dependency_links to ../../build/game/game.egg-info/dependency_links.txt
+[1.023s] writing entry points to ../../build/game/game.egg-info/entry_points.txt
+[1.023s] writing requirements to ../../build/game/game.egg-info/requires.txt
+[1.023s] writing top-level names to ../../build/game/game.egg-info/top_level.txt
+[1.024s] reading manifest file '../../build/game/game.egg-info/SOURCES.txt'
+[1.024s] writing manifest file '../../build/game/game.egg-info/SOURCES.txt'
+[1.024s] running build
+[1.025s] running build_py
+[1.025s] running install
+[1.025s] running install_lib
+[1.026s] running install_data
+[1.026s] running install_egg_info
+[1.027s] removing '/chess_ROS2_humble/ros2_ws/install/game/lib/python3.10/site-packages/game-0.0.0-py3.10.egg-info' (and everything under it)
+[1.027s] Copying ../../build/game/game.egg-info to /chess_ROS2_humble/ros2_ws/install/game/lib/python3.10/site-packages/game-0.0.0-py3.10.egg-info
+[1.028s] running install_scripts
+[1.042s] Installing game script to /chess_ROS2_humble/ros2_ws/install/game/lib/game
+[1.043s] writing list of installed files to '/chess_ROS2_humble/ros2_ws/build/game/install.log'
+[1.061s] Invoked command in '/chess_ROS2_humble/ros2_ws/src/game' returned '0': PYTHONPATH=/chess_ROS2_humble/ros2_ws/build/game/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/chess_ROS2_humble/ros2_ws/install/game/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/game build --build-base /chess_ROS2_humble/ros2_ws/build/game/build install --record /chess_ROS2_humble/ros2_ws/build/game/install.log --single-version-externally-managed install_data

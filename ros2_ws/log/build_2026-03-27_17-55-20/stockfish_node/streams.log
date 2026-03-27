@@ -1,0 +1,21 @@
+[0.737s] Invoking command in '/chess_ROS2_humble/ros2_ws/src/stockfish_node': LD_LIBRARY_PATH=/chess_ROS2_humble/ros2_ws/install/interfaces/lib:/chess_ROS2_humble/ros2_ws/install/comp_vision_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/chess_ROS2_humble/ros2_ws/build/stockfish_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/chess_ROS2_humble/ros2_ws/install/stockfish_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stockfish_node build --build-base /chess_ROS2_humble/ros2_ws/build/stockfish_node/build install --record /chess_ROS2_humble/ros2_ws/build/stockfish_node/install.log --single-version-externally-managed install_data
+[0.889s] running egg_info
+[0.890s] writing ../../build/stockfish_node/stockfish_node.egg-info/PKG-INFO
+[0.890s] writing dependency_links to ../../build/stockfish_node/stockfish_node.egg-info/dependency_links.txt
+[0.890s] writing entry points to ../../build/stockfish_node/stockfish_node.egg-info/entry_points.txt
+[0.890s] writing requirements to ../../build/stockfish_node/stockfish_node.egg-info/requires.txt
+[0.890s] writing top-level names to ../../build/stockfish_node/stockfish_node.egg-info/top_level.txt
+[0.892s] reading manifest file '../../build/stockfish_node/stockfish_node.egg-info/SOURCES.txt'
+[0.893s] writing manifest file '../../build/stockfish_node/stockfish_node.egg-info/SOURCES.txt'
+[0.893s] running build
+[0.893s] running build_py
+[0.893s] running install
+[0.893s] running install_lib
+[0.895s] running install_data
+[0.895s] running install_egg_info
+[0.897s] removing '/chess_ROS2_humble/ros2_ws/install/stockfish_node/lib/python3.10/site-packages/stockfish_node-0.0.0-py3.10.egg-info' (and everything under it)
+[0.897s] Copying ../../build/stockfish_node/stockfish_node.egg-info to /chess_ROS2_humble/ros2_ws/install/stockfish_node/lib/python3.10/site-packages/stockfish_node-0.0.0-py3.10.egg-info
+[0.898s] running install_scripts
+[0.920s] Installing stockfish_node script to /chess_ROS2_humble/ros2_ws/install/stockfish_node/lib/stockfish_node
+[0.920s] writing list of installed files to '/chess_ROS2_humble/ros2_ws/build/stockfish_node/install.log'
+[0.934s] Invoked command in '/chess_ROS2_humble/ros2_ws/src/stockfish_node' returned '0': LD_LIBRARY_PATH=/chess_ROS2_humble/ros2_ws/install/interfaces/lib:/chess_ROS2_humble/ros2_ws/install/comp_vision_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/chess_ROS2_humble/ros2_ws/build/stockfish_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/chess_ROS2_humble/ros2_ws/install/stockfish_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/stockfish_node build --build-base /chess_ROS2_humble/ros2_ws/build/stockfish_node/build install --record /chess_ROS2_humble/ros2_ws/build/stockfish_node/install.log --single-version-externally-managed install_data

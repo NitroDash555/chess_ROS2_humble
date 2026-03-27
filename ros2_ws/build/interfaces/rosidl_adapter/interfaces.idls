@@ -1,0 +1,3 @@
+/chess_ROS2_humble/ros2_ws/build/interfaces/rosidl_adapter/interfaces:srv/GetFEN.idl
+/chess_ROS2_humble/ros2_ws/build/interfaces/rosidl_adapter/interfaces:srv/GetMove.idl
+/chess_ROS2_humble/ros2_ws/build/interfaces/rosidl_adapter/interfaces:srv/Move.idl

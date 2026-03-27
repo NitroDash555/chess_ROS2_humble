@@ -1,0 +1,3 @@
+[console_scripts]
+comp_vision = comp_vision.comp_vision:main
+

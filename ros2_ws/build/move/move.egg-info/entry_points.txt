@@ -1,0 +1,3 @@
+[console_scripts]
+move = move.move:main
+

@@ -1,0 +1,29 @@
+{
+  "package_name": "interfaces",
+  "output_dir": "/chess_ROS2_humble/ros2_ws/build/interfaces/rosidl_typesupport_introspection_cpp/interfaces",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource",
+  "idl_tuples": [
+    "/chess_ROS2_humble/ros2_ws/build/interfaces/rosidl_adapter/interfaces:srv/GetFEN.idl",
+    "/chess_ROS2_humble/ros2_ws/build/interfaces/rosidl_adapter/interfaces:srv/GetMove.idl",
+    "/chess_ROS2_humble/ros2_ws/build/interfaces/rosidl_adapter/interfaces:srv/Move.idl"
+  ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_introspection_cpp/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/idl__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/msg__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
+    "/chess_ROS2_humble/ros2_ws/build/interfaces/rosidl_adapter/interfaces/srv/GetFEN.idl",
+    "/chess_ROS2_humble/ros2_ws/build/interfaces/rosidl_adapter/interfaces/srv/GetMove.idl",
+    "/chess_ROS2_humble/ros2_ws/build/interfaces/rosidl_adapter/interfaces/srv/Move.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
+  ]
+}

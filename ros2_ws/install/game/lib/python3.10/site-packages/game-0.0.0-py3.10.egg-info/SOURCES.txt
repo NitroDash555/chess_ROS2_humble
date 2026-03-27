@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/game/game.egg-info/PKG-INFO
+../../build/game/game.egg-info/SOURCES.txt
+../../build/game/game.egg-info/dependency_links.txt
+../../build/game/game.egg-info/entry_points.txt
+../../build/game/game.egg-info/requires.txt
+../../build/game/game.egg-info/top_level.txt
+../../build/game/game.egg-info/zip-safe
+game/__init__.py
+game/game.py
+resource/game
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

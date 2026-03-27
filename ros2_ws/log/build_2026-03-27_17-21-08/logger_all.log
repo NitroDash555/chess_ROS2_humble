@@ -1,0 +1,228 @@
+[0.055s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.055s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f32b25510f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f32b269e080>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f32b269e080>>, mixin_verb=('build',))
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.138s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.138s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/chess_ROS2_humble/ros2_ws'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.138s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.145s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp_vision) by extensions ['ignore', 'ignore_ament_install']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp_vision) by extension 'ignore'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp_vision) by extension 'ignore_ament_install'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp_vision) by extensions ['colcon_pkg']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp_vision) by extension 'colcon_pkg'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp_vision) by extensions ['colcon_meta']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp_vision) by extension 'colcon_meta'
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp_vision) by extensions ['ros']
+[0.146s] Level 1:colcon.colcon_core.package_identification:_identify(src/comp_vision) by extension 'ros'
+[0.147s] DEBUG:colcon.colcon_core.package_identification:Package 'src/comp_vision' with type 'ros.ament_python' and name 'comp_vision'
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extensions ['ignore', 'ignore_ament_install']
+[0.147s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/game) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/game' with type 'ros.ament_python' and name 'game'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ignore'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ignore_ament_install'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['colcon_pkg']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'colcon_pkg'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['colcon_meta']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'colcon_meta'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extensions ['ros']
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/interfaces) by extension 'ros'
+[0.148s] DEBUG:colcon.colcon_core.package_identification:Package 'src/interfaces' with type 'ros.ament_cmake' and name 'interfaces'
+[0.148s] Level 1:colcon.colcon_core.package_identification:_identify(src/move) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/move) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/move) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/move) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/move) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/move) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/move) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/move) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/move) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/move' with type 'ros.ament_python' and name 'move'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/start) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/start) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/start) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/start) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/start) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/start) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/start) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/start) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(src/start) by extension 'ros'
+[0.149s] DEBUG:colcon.colcon_core.package_identification:Package 'src/start' with type 'ros.ament_python' and name 'setup'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extensions ['ignore', 'ignore_ament_install']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extension 'ignore'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extension 'ignore_ament_install'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extensions ['colcon_pkg']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extension 'colcon_pkg'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extensions ['colcon_meta']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extension 'colcon_meta'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extensions ['ros']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extension 'ros'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Found ROS schema reference in package manifest in 'src/stockfish'
+[0.150s] WARNING:colcon.colcon_core.package_identification:Failed to parse ROS package manifest in 'src/stockfish': Error(s) in package 'src/stockfish/package.xml':
+The package "stockfish" must not "exec_depend" on a package with the same name as this package
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extensions ['cmake', 'python']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extension 'cmake'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extension 'python'
+[0.150s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/stockfish' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extensions ['python_setup_py']
+[0.150s] Level 1:colcon.colcon_core.package_identification:_identify(src/stockfish) by extension 'python_setup_py'
+[0.293s] DEBUG:colcon.colcon_core.package_identification:Package 'src/stockfish' with type 'python' and name 'stockfish'
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.293s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'cmake_clean_first' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'cmake_force_configure' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'ament_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'catkin_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'game' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.305s] DEBUG:colcon.colcon_core.verb:Building package 'game' with the following arguments: {'ament_cmake_args': None, 'build_base': '/chess_ROS2_humble/ros2_ws/build/game', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/chess_ROS2_humble/ros2_ws/install/game', 'merge_install': False, 'path': '/chess_ROS2_humble/ros2_ws/src/game', 'symlink_install': False, 'test_result_base': None}
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.305s] DEBUG:colcon.colcon_core.verb:Building package 'interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/chess_ROS2_humble/ros2_ws/build/interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/chess_ROS2_humble/ros2_ws/install/interfaces', 'merge_install': False, 'path': '/chess_ROS2_humble/ros2_ws/src/interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'setup' build argument 'cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'setup' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'setup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'setup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'setup' build argument 'cmake_clean_first' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'setup' build argument 'cmake_force_configure' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'setup' build argument 'ament_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'setup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'setup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.306s] DEBUG:colcon.colcon_core.verb:Building package 'setup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/chess_ROS2_humble/ros2_ws/build/setup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/chess_ROS2_humble/ros2_ws/install/setup', 'merge_install': False, 'path': '/chess_ROS2_humble/ros2_ws/src/start', 'symlink_install': False, 'test_result_base': None}
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'stockfish' build argument 'cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'stockfish' build argument 'cmake_target' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'stockfish' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'stockfish' build argument 'cmake_clean_cache' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'stockfish' build argument 'cmake_clean_first' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'stockfish' build argument 'cmake_force_configure' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'stockfish' build argument 'ament_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'stockfish' build argument 'catkin_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'stockfish' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.306s] DEBUG:colcon.colcon_core.verb:Building package 'stockfish' with the following arguments: {'ament_cmake_args': None, 'build_base': '/chess_ROS2_humble/ros2_ws/build/stockfish', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/chess_ROS2_humble/ros2_ws/install/stockfish', 'merge_install': False, 'path': '/chess_ROS2_humble/ros2_ws/src/stockfish', 'symlink_install': False, 'test_result_base': None}
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'comp_vision' build argument 'cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'comp_vision' build argument 'cmake_target' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'comp_vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'comp_vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'comp_vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'comp_vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'comp_vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'comp_vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'comp_vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.306s] DEBUG:colcon.colcon_core.verb:Building package 'comp_vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/chess_ROS2_humble/ros2_ws/build/comp_vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/chess_ROS2_humble/ros2_ws/install/comp_vision', 'merge_install': False, 'path': '/chess_ROS2_humble/ros2_ws/src/comp_vision', 'symlink_install': False, 'test_result_base': None}
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'move' build argument 'cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'move' build argument 'cmake_target' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'move' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'move' build argument 'cmake_clean_cache' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'move' build argument 'cmake_clean_first' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'move' build argument 'cmake_force_configure' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'move' build argument 'ament_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'move' build argument 'catkin_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'move' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.306s] DEBUG:colcon.colcon_core.verb:Building package 'move' with the following arguments: {'ament_cmake_args': None, 'build_base': '/chess_ROS2_humble/ros2_ws/build/move', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/chess_ROS2_humble/ros2_ws/install/move', 'merge_install': False, 'path': '/chess_ROS2_humble/ros2_ws/src/move', 'symlink_install': False, 'test_result_base': None}
+[0.306s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.312s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.312s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/chess_ROS2_humble/ros2_ws/src/interfaces' with build type 'ament_cmake'
+[0.312s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/chess_ROS2_humble/ros2_ws/src/interfaces'
+[0.314s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.314s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.314s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.316s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/chess_ROS2_humble/ros2_ws/src/game' with build type 'ament_python'
+[0.316s] Level 1:colcon.colcon_core.shell:create_environment_hook('game', 'ament_prefix_path')
+[0.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/chess_ROS2_humble/ros2_ws/install/game/share/game/hook/ament_prefix_path.ps1'
+[0.317s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/chess_ROS2_humble/ros2_ws/install/game/share/game/hook/ament_prefix_path.dsv'
+[0.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/chess_ROS2_humble/ros2_ws/install/game/share/game/hook/ament_prefix_path.sh'
+[0.317s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.317s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.319s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/chess_ROS2_humble/ros2_ws/src/start' with build type 'ament_python'
+[0.319s] Level 1:colcon.colcon_core.shell:create_environment_hook('setup', 'ament_prefix_path')
+[0.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/chess_ROS2_humble/ros2_ws/install/setup/share/setup/hook/ament_prefix_path.ps1'
+[0.319s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/chess_ROS2_humble/ros2_ws/install/setup/share/setup/hook/ament_prefix_path.dsv'
+[0.320s] INFO:colcon.colcon_core.shell:Creating environment hook '/chess_ROS2_humble/ros2_ws/install/setup/share/setup/hook/ament_prefix_path.sh'
+[0.320s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.320s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.322s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/chess_ROS2_humble/ros2_ws/src/stockfish'
+[0.322s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.322s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.326s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/chess_ROS2_humble/ros2_ws/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /chess_ROS2_humble/ros2_ws/build/interfaces -- -j20 -l20
+[0.471s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/chess_ROS2_humble/ros2_ws/src/game'
+[0.471s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.471s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.646s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.646s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.646s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with 'Command '['/usr/bin/python3', '-c', 'import sys;from contextlib import suppress;exec("with suppress(ImportError):    from setuptools.extern.packaging.specifiers    import SpecifierSet");exec("with suppress(ImportError):    from packaging.specifiers import SpecifierSet");from distutils.core import run_setup;dist = run_setup(    \'setup.py\', script_args=(\'--dry-run\',), stop_after=\'config\');skip_keys = (\'cmdclass\', \'distclass\', \'ext_modules\', \'metadata\');data = {    key: value for key, value in dist.__dict__.items()     if (        not key.startswith(\'_\') and         not callable(value) and         key not in skip_keys and         key not in dist.display_option_names    )};data[\'metadata\'] = {    k: v for k, v in dist.metadata.__dict__.items()     if k not in (\'license_files\', \'provides_extras\')};sys.stdout.buffer.write(repr(data).encode(\'utf-8\'))']' returned non-zero exit status 1.'
+[0.646s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.650s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[0.650s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.651s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.651s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.652s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[0.653s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.653s] INFO:colcon.colcon_core.shell:Creating prefix script '/chess_ROS2_humble/ros2_ws/install/local_setup.ps1'
+[0.654s] INFO:colcon.colcon_core.shell:Creating prefix util module '/chess_ROS2_humble/ros2_ws/install/_local_setup_util_ps1.py'
+[0.655s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/chess_ROS2_humble/ros2_ws/install/setup.ps1'
+[0.655s] INFO:colcon.colcon_core.shell:Creating prefix script '/chess_ROS2_humble/ros2_ws/install/local_setup.sh'
+[0.656s] INFO:colcon.colcon_core.shell:Creating prefix util module '/chess_ROS2_humble/ros2_ws/install/_local_setup_util_sh.py'
+[0.656s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/chess_ROS2_humble/ros2_ws/install/setup.sh'
+[0.657s] INFO:colcon.colcon_core.shell:Creating prefix script '/chess_ROS2_humble/ros2_ws/install/local_setup.bash'
+[0.657s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/chess_ROS2_humble/ros2_ws/install/setup.bash'
+[0.658s] INFO:colcon.colcon_core.shell:Creating prefix script '/chess_ROS2_humble/ros2_ws/install/local_setup.zsh'
+[0.658s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/chess_ROS2_humble/ros2_ws/install/setup.zsh'

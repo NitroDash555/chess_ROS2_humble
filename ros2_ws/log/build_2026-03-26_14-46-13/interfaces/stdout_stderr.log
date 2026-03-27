@@ -1,0 +1,293 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found PythonExtra: .so  
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /chess_ROS2_humble/ros2_ws/build/interfaces
+[  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  4%] Built target ament_cmake_python_copy_interfaces
+running egg_info
+creating interfaces.egg-info
+writing interfaces.egg-info/PKG-INFO
+writing dependency_links to interfaces.egg-info/dependency_links.txt
+writing top-level names to interfaces.egg-info/top_level.txt
+writing manifest file 'interfaces.egg-info/SOURCES.txt'
+reading manifest file 'interfaces.egg-info/SOURCES.txt'
+writing manifest file 'interfaces.egg-info/SOURCES.txt'
+[  4%] Built target ament_cmake_python_build_interfaces_egg
+[  6%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/detail/get_fen__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/detail/move__functions.c.o[0m
+[ 10%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/detail/get_move__functions.c.o[0m
+[ 10%] Built target interfaces__cpp
+[ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 17%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 19%] [32m[1mLinking C shared library libinterfaces__rosidl_generator_c.so[0m
+[ 19%] Built target interfaces__rosidl_generator_c
+[ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/srv/detail/move__type_support.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/srv/detail/get_fen__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/srv/detail/get_move__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/srv/get_fen__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/srv/move__type_support.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/srv/move__type_support.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/srv/get_move__type_support.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/srv/get_fen__type_support.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/srv/get_move__type_support.cpp.o[0m
+[ 46%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/srv/detail/get_fen__type_support.c.o[0m
+[ 48%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/srv/detail/get_move__type_support.c.o[0m
+[ 51%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/srv/detail/move__type_support.c.o[0m
+[ 53%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/srv/detail/move__type_support_c.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/srv/detail/get_move__type_support_c.cpp.o[0m
+[ 57%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/srv/detail/get_fen__type_support_c.cpp.o[0m
+[ 59%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so[0m
+[ 61%] [32m[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so[0m
+[ 63%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/get_fen__type_support.cpp.o[0m
+[ 63%] Built target interfaces__rosidl_typesupport_introspection_c
+[ 65%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/get_move__type_support.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/move__type_support.cpp.o[0m
+[ 68%] Built target interfaces__rosidl_typesupport_c
+[ 70%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so[0m
+[ 72%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so[0m
+[ 72%] Built target interfaces__rosidl_typesupport_cpp
+[ 74%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so[0m
+[ 74%] Built target interfaces__rosidl_typesupport_introspection_cpp
+[ 74%] Built target interfaces__rosidl_typesupport_fastrtps_c
+[ 76%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 76%] Built target interfaces__rosidl_typesupport_fastrtps_cpp
+[ 76%] Built target interfaces
+[ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 78%] Built target interfaces__py
+[ 80%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/srv/_get_fen_s.c.o[0m
+[ 82%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/srv/_get_move_s.c.o[0m
+[ 85%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/srv/_move_s.c.o[0m
+[ 87%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/libinterfaces__rosidl_generator_py.so[0m
+[ 87%] Built target interfaces__rosidl_generator_py
+[ 89%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[ 91%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[100%] Built target interfaces__rosidl_typesupport_c__pyext
+[100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext
+-- Install configuration: ""
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/msg
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/get_fen.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__functions.c
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__functions.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__struct.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__type_support.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__functions.c
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__functions.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__struct.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__type_support.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__functions.c
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__functions.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__struct.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__type_support.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/get_move.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/move.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/environment/library_path.sh
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/environment/library_path.dsv
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_generator_c.so
+-- Set runtime path of "/chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_generator_c.so" to ""
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/msg
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__rosidl_typesupport_fastrtps_c.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__rosidl_typesupport_fastrtps_c.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__rosidl_typesupport_fastrtps_c.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/msg
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/get_fen.hpp
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__builder.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__struct.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__traits.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__type_support.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__builder.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__struct.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__traits.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__type_support.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__builder.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__struct.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__traits.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__type_support.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/get_move.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/move.hpp
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/msg
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/dds_fastrtps
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/msg
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__rosidl_typesupport_introspection_c.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__type_support.c
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__rosidl_typesupport_introspection_c.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__type_support.c
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__rosidl_typesupport_introspection_c.h
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__type_support.c
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so
+-- Set runtime path of "/chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv
+-- Up-to-date: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_fen__type_support.cpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/get_move__type_support.cpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/include/interfaces/interfaces/srv/detail/move__type_support.cpp
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so
+-- Set runtime path of "/chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so" to ""
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/environment/pythonpath.sh
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/environment/pythonpath.dsv
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_get_fen.py
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_get_fen_s.c
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_get_move.py
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_get_move_s.c
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_move.py
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_move_s.c
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/__init__.py
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/libinterfaces__rosidl_generator_py.so
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+Listing '/chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces'...
+Compiling '/chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py'...
+Listing '/chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv'...
+Compiling '/chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/__init__.py'...
+Compiling '/chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_get_fen.py'...
+Compiling '/chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_get_move.py'...
+Compiling '/chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_move.py'...
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Set runtime path of "/chess_ROS2_humble/ros2_ws/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_generator_py.so
+-- Set runtime path of "/chess_ROS2_humble/ros2_ws/install/interfaces/lib/libinterfaces__rosidl_generator_py.so" to ""
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/srv/GetFEN.idl
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/srv/GetMove.idl
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/srv/Move.idl
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/srv/GetFEN.srv
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/srv/GetFEN_Request.msg
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/srv/GetFEN_Response.msg
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/srv/GetMove.srv
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/srv/GetMove_Request.msg
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/srv/GetMove_Response.msg
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/srv/Move.srv
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/srv/Move_Request.msg
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/srv/Move_Response.msg
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/environment/ament_prefix_path.sh
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/environment/path.sh
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/environment/path.dsv
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/local_setup.bash
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/local_setup.sh
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/local_setup.zsh
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/local_setup.dsv
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/package.dsv
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/ament_index/resource_index/packages/interfaces
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake
+-- Installing: /chess_ROS2_humble/ros2_ws/install/interfaces/share/interfaces/package.xml
