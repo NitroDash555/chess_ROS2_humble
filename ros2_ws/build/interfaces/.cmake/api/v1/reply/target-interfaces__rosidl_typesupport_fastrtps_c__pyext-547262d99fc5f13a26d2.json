@@ -125,13 +125,13 @@
 			{
 				"command" : 7,
 				"file" : 0,
-				"line" : 273,
+				"line" : 229,
 				"parent" : 4
 			},
 			{
 				"command" : 7,
 				"file" : 0,
-				"line" : 229,
+				"line" : 273,
 				"parent" : 4
 			},
 			{
@@ -332,15 +332,7 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 7,
-			"id" : "interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 15,
-			"id" : "interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 16,
 			"id" : "interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df"
 		},
 		{
@@ -348,8 +340,16 @@
 			"id" : "interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 16,
+			"backtrace" : 15,
 			"id" : "interfaces__py::@dc9c590cc4167e047ef9"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",

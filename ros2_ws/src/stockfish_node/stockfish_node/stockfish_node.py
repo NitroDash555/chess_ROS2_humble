@@ -15,8 +15,7 @@ class stockfish_node(Node):
         return response
         
     def get_move(self, fen):
-        #код
-        return 'e2e4' #пример
+        return stockfish.Stockfish.get_best_move(fen)
 
 def main(args=None):
     rclpy.init(args=args)
