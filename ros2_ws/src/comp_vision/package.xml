@@ -9,7 +9,7 @@
 
   <exec_depend>interfaces</exec_depend>
   <exec_depend>rclpy</exec_depend>
-  <exec_depend>ultralytrics</exec_depend>
+  <exec_depend>ultralytics</exec_depend>
   <exec_depend>opencv</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
