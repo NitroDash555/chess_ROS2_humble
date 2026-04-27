@@ -2,14 +2,24 @@
 
 import rclpy
 from rclpy.node import Node
-from ultralytics import YOLO
-import cv2
+
+try:
+    from ultralytics import YOLO  # noqa: F401
+except ImportError:
+    YOLO = None
+
+try:
+    import cv2  # noqa: F401
+except ImportError:
+    cv2 = None
 
 from interfaces.srv import GetFEN
 
 class comp_vision(Node):
     def __init__(self):
         super().__init__('comp_vision')
+        if YOLO is None:
+            self.get_logger().warning('ultralytics is not installed, using stub FEN provider')
         self.get_logger().info('создаем сервер')
         self.serv = self.create_service(GetFEN, 'get_fen', self.return_fen)
         self.get_logger().info('сервер создан')
