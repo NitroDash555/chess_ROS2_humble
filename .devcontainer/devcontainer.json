@@ -1,18 +1,42 @@
 {
   "name": "humble desktop",
-  "dockerFile": "Dockerfile",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "args": {
+      "INSTALL_VISION_DEPS": "true"
+    }
+  },
   "runArgs": [
     "--privileged",
-    "--network=host"
+    "--network=host",
+    "--shm-size=1g"
   ],
-  "workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind",
-  "workspaceFolder": "/${localWorkspaceFolderBasename}",
-  "mounts": [
-    "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
-  ]
-    ,
+  "containerEnv": {
+    "QT_X11_NO_MITSHM": "1",
+    "LIBGL_ALWAYS_SOFTWARE": "1"
+  },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "remoteUser": "ubuntu",
+  "postCreateCommand": "bash -lc 'source /opt/ros/$ROS_DISTRO/setup.bash && if [ \"$INSTALL_VISION_DEPS\" = \"true\" ]; then bash /workspaces/${localWorkspaceFolderBasename}/ros2_ws/scripts/install_vision_deps.sh; fi && cd /workspaces/${localWorkspaceFolderBasename}/ros2_ws && rm -rf build install log && colcon build --symlink-install'",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+  "forwardPorts": [6080, 5901],
+  "portsAttributes": {
+    "6080": {
+      "label": "Desktop (Web)"
+    },
+    "5901": {
+      "label": "Desktop (VNC)"
+    }
+  },
   "customizations": {
     "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/bin/python3"
+      },
       "extensions": [
         "ms-python.debugpy",
         "ms-python.python",

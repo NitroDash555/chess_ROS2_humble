@@ -1,2 +1,7 @@
 /.vscode
 /ros2_ws/log
+/.github
+/ros2_ws/requirements/wheels/
+/ros2_ws/build/
+/ros2_ws/install/
+/ros2_ws/log/

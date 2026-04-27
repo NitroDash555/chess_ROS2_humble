@@ -1,6 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000332] (-) JobUnselected: {'identifier': 'comp_vision'}
-[0.000496] (-) JobUnselected: {'identifier': 'game'}
-[0.000552] (-) JobUnselected: {'identifier': 'move'}
-[0.000586] (-) JobUnselected: {'identifier': 'stockfish'}
-[0.000705] (-) EventReactorShutdown: {}
