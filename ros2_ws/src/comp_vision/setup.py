@@ -11,7 +11,17 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=[
+    'setuptools',
+    'numpy<2.0',
+    'opencv-python-headless<4.11.0',
+    'ultralytics',
+    'shapely',
+    'python-dotenv',
+    'python-chess',
+    'pillow',
+    'matplotlib',
+    ],
     zip_safe=True,
     maintainer='ubuntu',
     maintainer_email='ubuntu@todo.todo',
@@ -26,4 +36,11 @@ setup(
         'console_scripts': ['comp_vision = comp_vision.comp_vision:main'
         ],
     },
+    package_data={
+        'comp_vision': [
+            'chess_vision/assets/models/*.pt',
+            'chess_vision/*.jpg',  # если нужны тестовые фото
+        ],
+    },
+    include_package_data=True,
 )

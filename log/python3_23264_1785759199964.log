@@ -1,0 +1,9 @@
+[INFO] [1785759201.008254391] [main]: Service get_fen not available, waiting...
+[INFO] [1785759202.010144864] [main]: Service get_fen not available, waiting...
+[INFO] [1785759203.011910008] [main]: Service get_fen not available, waiting...
+[INFO] [1785759203.644363410] [main]: FEN received: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+[INFO] [1785759204.042329146] [main]: Stockfish suggests: d2d4
+[INFO] [1785759204.052595683] [main]: Move executed successfully
+[INFO] [1785759207.121482821] [main]: FEN received: rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1
+[INFO] [1785759207.243654129] [main]: Stockfish suggests: g8f6
+[INFO] [1785759207.245757808] [main]: Move executed successfully

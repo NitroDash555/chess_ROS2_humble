@@ -126,6 +126,27 @@ Human board -> comp_vision (GetFEN) -> game -> stockfish_node (GetMove) -> game 
 2. Выполнить Reopen in Container.
 3. Дождаться postCreateCommand (сборка colcon).
 
+### 5.1 Установка на новом устройстве (вне Dev Container)
+
+Зависимости ставятся автоматически одним скриптом:
+
+```bash
+cd ros2_ws
+bash scripts/install_vision_deps.sh
+```
+
+Скрипт pip-устанавливает `numpy<2.0`, `opencv-python-headless<4.11.0`, `ultralytics`, `shapely`, `python-dotenv`, `python-chess`, `pillow`, `matplotlib`, `stockfish`, а также apt-бинарник Stockfish, если он не установлен. Эти же зависимости прописаны в `install_requires` в `setup.py` каждого пакета.
+
+После установки зависимостей — сборка:
+
+```bash
+source /opt/ros/humble/setup.bash
+colcon build --symlink-install
+source install/setup.bash
+```
+
+В Dev Container этот скрипт запускается автоматически через `postCreateCommand`.
+
 ## 6. Сборка и запуск
 
 Все команды выполнять внутри контейнера.

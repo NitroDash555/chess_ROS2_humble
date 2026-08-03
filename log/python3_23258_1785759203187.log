@@ -1,0 +1,99 @@
+[DEBUG] [1785759203.187187603] [rcl]: Initializing node 'comp_vision' in namespace ''
+[DEBUG] [1785759203.187208533] [rcl]: Using domain ID of '0'
+[DEBUG] [1785759203.190366026] [rcl]: Initializing publisher for topic name '/rosout'
+[DEBUG] [1785759203.190382459] [rcl]: Expanded and remapped topic name '/rosout'
+[DEBUG] [1785759203.190948045] [rcl]: Publisher initialized
+[DEBUG] [1785759203.190957280] [rcl]: Node initialized
+[DEBUG] [1785759203.206221734] [rcl]: Initializing publisher for topic name '/parameter_events'
+[DEBUG] [1785759203.206243719] [rcl]: Expanded and remapped topic name '/parameter_events'
+[DEBUG] [1785759203.206630873] [rcl]: Publisher initialized
+[DEBUG] [1785759203.207130281] [rcl]: Initializing service for service name 'main/describe_parameters'
+[DEBUG] [1785759203.207140849] [rcl]: Expanded and remapped service name '/main/describe_parameters'
+[DEBUG] [1785759203.207363535] [rmw_fastrtps_cpp]: ************ Service Details *********
+[DEBUG] [1785759203.207368693] [rmw_fastrtps_cpp]: Sub Topic rq/main/describe_parametersRequest
+[DEBUG] [1785759203.207370811] [rmw_fastrtps_cpp]: Pub Topic rr/main/describe_parametersReply
+[DEBUG] [1785759203.207372465] [rmw_fastrtps_cpp]: ***********
+[DEBUG] [1785759203.207407935] [rcl]: Service initialized
+[DEBUG] [1785759203.207503849] [rcl]: Initializing service for service name 'main/get_parameters'
+[DEBUG] [1785759203.207509016] [rcl]: Expanded and remapped service name '/main/get_parameters'
+[DEBUG] [1785759203.207656962] [rmw_fastrtps_cpp]: ************ Service Details *********
+[DEBUG] [1785759203.207660638] [rmw_fastrtps_cpp]: Sub Topic rq/main/get_parametersRequest
+[DEBUG] [1785759203.207662477] [rmw_fastrtps_cpp]: Pub Topic rr/main/get_parametersReply
+[DEBUG] [1785759203.207664121] [rmw_fastrtps_cpp]: ***********
+[DEBUG] [1785759203.207686209] [rcl]: Service initialized
+[DEBUG] [1785759203.207767253] [rcl]: Initializing service for service name 'main/get_parameter_types'
+[DEBUG] [1785759203.207772049] [rcl]: Expanded and remapped service name '/main/get_parameter_types'
+[DEBUG] [1785759203.207906529] [rmw_fastrtps_cpp]: ************ Service Details *********
+[DEBUG] [1785759203.207909936] [rmw_fastrtps_cpp]: Sub Topic rq/main/get_parameter_typesRequest
+[DEBUG] [1785759203.207911773] [rmw_fastrtps_cpp]: Pub Topic rr/main/get_parameter_typesReply
+[DEBUG] [1785759203.207913398] [rmw_fastrtps_cpp]: ***********
+[DEBUG] [1785759203.207933880] [rcl]: Service initialized
+[DEBUG] [1785759203.208014782] [rcl]: Initializing service for service name 'main/list_parameters'
+[DEBUG] [1785759203.208019337] [rcl]: Expanded and remapped service name '/main/list_parameters'
+[DEBUG] [1785759203.208146248] [rmw_fastrtps_cpp]: ************ Service Details *********
+[DEBUG] [1785759203.208149285] [rmw_fastrtps_cpp]: Sub Topic rq/main/list_parametersRequest
+[DEBUG] [1785759203.208151082] [rmw_fastrtps_cpp]: Pub Topic rr/main/list_parametersReply
+[DEBUG] [1785759203.208152745] [rmw_fastrtps_cpp]: ***********
+[DEBUG] [1785759203.208172206] [rcl]: Service initialized
+[DEBUG] [1785759203.208255079] [rcl]: Initializing service for service name 'main/set_parameters'
+[DEBUG] [1785759203.208259365] [rcl]: Expanded and remapped service name '/main/set_parameters'
+[DEBUG] [1785759203.208394374] [rmw_fastrtps_cpp]: ************ Service Details *********
+[DEBUG] [1785759203.208397637] [rmw_fastrtps_cpp]: Sub Topic rq/main/set_parametersRequest
+[DEBUG] [1785759203.208399431] [rmw_fastrtps_cpp]: Pub Topic rr/main/set_parametersReply
+[DEBUG] [1785759203.208401098] [rmw_fastrtps_cpp]: ***********
+[DEBUG] [1785759203.208420038] [rcl]: Service initialized
+[DEBUG] [1785759203.208486655] [rcl]: Initializing service for service name 'main/set_parameters_atomically'
+[DEBUG] [1785759203.208490834] [rcl]: Expanded and remapped service name '/main/set_parameters_atomically'
+[DEBUG] [1785759203.208620931] [rmw_fastrtps_cpp]: ************ Service Details *********
+[DEBUG] [1785759203.208624332] [rmw_fastrtps_cpp]: Sub Topic rq/main/set_parameters_atomicallyRequest
+[DEBUG] [1785759203.208626303] [rmw_fastrtps_cpp]: Pub Topic rr/main/set_parameters_atomicallyReply
+[DEBUG] [1785759203.208649020] [rmw_fastrtps_cpp]: ***********
+[DEBUG] [1785759203.208671421] [rcl]: Service initialized
+[INFO] [1785759203.209133845] [main]: создаем сервер
+[DEBUG] [1785759203.209492792] [rcl]: Initializing service for service name 'get_fen'
+[DEBUG] [1785759203.209499891] [rcl]: Expanded and remapped service name '/get_fen'
+[DEBUG] [1785759203.209724305] [rmw_fastrtps_cpp]: ************ Service Details *********
+[DEBUG] [1785759203.209729203] [rmw_fastrtps_cpp]: Sub Topic rq/get_fenRequest
+[DEBUG] [1785759203.209731174] [rmw_fastrtps_cpp]: Pub Topic rr/get_fenReply
+[DEBUG] [1785759203.209732890] [rmw_fastrtps_cpp]: ***********
+[DEBUG] [1785759203.209755533] [rcl]: Service initialized
+[INFO] [1785759203.210027378] [main]: сервер создан
+[DEBUG] [1785759203.210256986] [rcl]: Initializing wait set with '0' subscriptions, '2' guard conditions, '0' timers, '0' clients, '7' services
+[DEBUG] [1785759203.210334514] [rcl]: Initializing wait set with '0' subscriptions, '2' guard conditions, '0' timers, '0' clients, '7' services
+[DEBUG] [1785759203.464128024] [rcl]: Service server taking service request
+[DEBUG] [1785759203.464210384] [rcl]: Service take request succeeded: true
+[INFO] [1785759203.482322283] [main]: 1/8 Image Successfully Read
+[INFO] [1785759203.642819663] [main]: Error during perspective transformation ❌ Details: 'NoneType' object is not iterable
+[DEBUG] [1785759203.642936950] [rcl]: Sending service response
+[DEBUG] [1785759203.643200810] [rcl]: Initializing wait set with '0' subscriptions, '2' guard conditions, '0' timers, '0' clients, '7' services
+[DEBUG] [1785759203.643339124] [rcl]: Initializing wait set with '0' subscriptions, '2' guard conditions, '0' timers, '0' clients, '7' services
+[DEBUG] [1785759207.063848896] [rcl]: Service server taking service request
+[DEBUG] [1785759207.063955546] [rcl]: Service take request succeeded: true
+[INFO] [1785759207.073935825] [main]: 1/8 Image Successfully Read
+[INFO] [1785759207.120022920] [main]: Error during perspective transformation ❌ Details: 'NoneType' object is not iterable
+[DEBUG] [1785759207.120109609] [rcl]: Sending service response
+[DEBUG] [1785759207.120269727] [rcl]: Initializing wait set with '0' subscriptions, '2' guard conditions, '0' timers, '0' clients, '7' services
+[DEBUG] [1785759207.120346313] [rcl]: Initializing wait set with '0' subscriptions, '2' guard conditions, '0' timers, '0' clients, '7' services
+[DEBUG] [1785759209.170190278] [rcl]: Shutting down ROS client library, for context at address: 0x5617bea4c680
+[DEBUG] [1785759209.170300406] [rcl]: Finalizing event
+[DEBUG] [1785759209.170314681] [rcl]: Event finalized
+[DEBUG] [1785759209.170319967] [rcl]: Finalizing publisher
+[DEBUG] [1785759209.170569103] [rcl]: Publisher finalized
+[DEBUG] [1785759209.170596379] [rcl]: Finalizing service
+[DEBUG] [1785759209.170816043] [rcl]: Service finalized
+[DEBUG] [1785759209.170834619] [rcl]: Finalizing service
+[DEBUG] [1785759209.170960997] [rcl]: Service finalized
+[DEBUG] [1785759209.170971245] [rcl]: Finalizing service
+[DEBUG] [1785759209.171078459] [rcl]: Service finalized
+[DEBUG] [1785759209.171089782] [rcl]: Finalizing service
+[DEBUG] [1785759209.171197567] [rcl]: Service finalized
+[DEBUG] [1785759209.171211712] [rcl]: Finalizing service
+[DEBUG] [1785759209.171303485] [rcl]: Service finalized
+[DEBUG] [1785759209.171313472] [rcl]: Finalizing service
+[DEBUG] [1785759209.171420274] [rcl]: Service finalized
+[DEBUG] [1785759209.171430702] [rcl]: Finalizing service
+[DEBUG] [1785759209.171540128] [rcl]: Service finalized
+[DEBUG] [1785759209.171551745] [rcl]: Finalizing node
+[DEBUG] [1785759209.171554949] [rcl]: Finalizing publisher
+[DEBUG] [1785759209.171698513] [rcl]: Publisher finalized
+[DEBUG] [1785759209.172975250] [rcl]: Node finalized

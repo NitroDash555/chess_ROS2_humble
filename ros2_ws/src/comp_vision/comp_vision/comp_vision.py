@@ -1,39 +1,44 @@
 #!/usr/bin/env python3
 
+from pathlib import Path
+
 import rclpy
 from rclpy.node import Node
 
-try:
-    from ultralytics import YOLO  # noqa: F401
-except ImportError:
-    YOLO = None
-
-try:
-    import cv2  # noqa: F401
-except ImportError:
-    cv2 = None
-
 from interfaces.srv import GetFEN
+
+from comp_vision.chess_vision import pipeline
+
 
 class comp_vision(Node):
     def __init__(self):
         super().__init__('comp_vision')
-        if YOLO is None:
-            self.get_logger().warning('ultralytics is not installed, using stub FEN provider')
         self.get_logger().info('создаем сервер')
         self.serv = self.create_service(GetFEN, 'get_fen', self.return_fen)
         self.get_logger().info('сервер создан')
+        self.image_path = self._resolve_save_path() / 'z.jpg'
 
     def return_fen(self, request, response):
-        self.get_logger().info('запрос получен')
-        response.fen = self.make_fen()
-        self.get_logger().info('возвращаем ответ')
+        response.fen = pipeline(
+            str(self.image_path),
+            prev_fen=request.prev_fen,
+            logger=self.get_logger(),
+        )
         return response
-    
-    def make_fen(self):
-        self.get_logger().info('возвращаем фен')
-        #здесь будет код компьютерного зрения
-        return "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR b KQkq e3 0 2" #временный пример
+
+    @staticmethod
+    def _resolve_save_path():
+        cwd = Path.cwd().resolve()
+        for candidate in (cwd, *cwd.parents):
+            if (candidate / 'ros2_ws').exists() and (candidate / 'img').exists():
+                img_dir = candidate / 'img'
+                img_dir.mkdir(parents=True, exist_ok=True)
+                return img_dir
+
+        fallback = cwd / 'img'
+        fallback.parent.mkdir(parents=True, exist_ok=True)
+        return fallback
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -44,6 +49,7 @@ def main(args=None):
         pass
     finally:
         node.destroy_node()
+
 
 if __name__ == '__main__':
     main()
