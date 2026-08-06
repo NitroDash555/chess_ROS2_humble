@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from collections import deque
+import functools
 from pathlib import Path
 import re
 import time
@@ -137,24 +138,23 @@ class GameNode(Node):
         move = result.move
         self.get_logger().info(f'Stockfish suggests: {move}')
 
-        try:
-            self.update_fen(move)
-        except Exception as e:
-            self.get_logger().error(f'Failed to apply move {move}: {e}')
-            self._finish_chain()
-            return
-
         request = srv.Move.Request()
         request.move = move
+        request.fen = self.fen
         self._call_service(
-            self.move_client, request, self._on_move_executed, 'move')
+            self.move_client, request,
+            functools.partial(self._on_move_executed, move=move), 'move')
 
-    def _on_move_executed(self, future):
+    def _on_move_executed(self, future, move):
         result = self._get_result(future, 'move')
         if result is None:
             return
 
         self.get_logger().info('Move executed successfully')
+        try:
+            self.update_fen(move)
+        except Exception as e:
+            self.get_logger().error(f'Failed to apply move {move}: {e}')
         self.my_move = False
         self.last_engine_move_time = time.time()
         self._finish_chain()

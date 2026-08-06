@@ -6,7 +6,6 @@ import rclpy
 from rclpy.node import Node
 
 from interfaces.srv import GetFEN
-
 from comp_vision.chess_vision import pipeline
 
 

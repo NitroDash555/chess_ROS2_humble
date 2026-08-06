@@ -9,27 +9,24 @@ def generate_launch_description():
     
     game = Node(
         package='game',
-        executable='game',
-        name='main'
+        executable='game'
     )
 
     stockfish = Node(
         package='stockfish_node',
-        executable='stockfish_node',
-        name='main'
+        executable='stockfish_node'
     )
 
     cv = Node(
         package='comp_vision',
         executable='comp_vision',
-        name='main',
-        arguments=['--ros-args', '--log-level', 'DEBUG']
+        additional_env={'NODE_ENV': 'debug'} #для рендера и сохранения картинок в pipe, закомментить если не нужно
     )
 
     move = Node(
         package='move',
         executable='move',
-        name='main'
+        parameters=[_resolve_board_calibration_path()]
     )
 
     return LaunchDescription([
@@ -56,3 +53,11 @@ def _resolve_save_path():
     fallback = cwd / 'log'
     fallback.mkdir(parents=True, exist_ok=True) # Исправлен .parent на сам fallback
     return fallback
+
+def _resolve_board_calibration_path():
+    cwd = Path.cwd().resolve()
+    for candidate in [cwd] + list(cwd.parents):
+        if (candidate / 'ros2_ws').exists() and (candidate / 'config' / 'board_calibration.yaml').exists():
+            return str(candidate / 'config' / 'board_calibration.yaml')
+
+    return str(cwd / 'config' / 'board_calibration.yaml')
