@@ -1,0 +1,8 @@
+/arduino_bridge:
+  ros__parameters:
+    baudrate: 115200
+    # Идентификаторы вашей Arduino (например, для Arduino Uno/Nano)
+    vendor_id: "2341"
+    product_id: "0043"
+    # Интервал проверки порта в секундах, если связь пропадет
+    reconnect_period: 2.0

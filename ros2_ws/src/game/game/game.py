@@ -2,26 +2,30 @@
 
 from collections import deque
 import functools
-from pathlib import Path
 import re
 import time
 
 import chess
 import rclpy
+from rclpy.action import ActionClient
 from rclpy.node import Node
+from action_msgs.msg import GoalStatus
 
+from chess_common import repo_paths
+from interfaces.action import GetFEN
 from interfaces import srv
 
 START_FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
 TIMER_PERIOD_SEC = 0.2
 HUMAN_TURN_WAIT_SEC = 3.0
+FEN_RETRY_DELAY_SEC = 1.0
 MAX_LOG_LINES = 300
 GAME_ID_RE = re.compile(r'game_id:\s*(\d+)')
 
 
 class FenLogger:
     def __init__(self, save_path=None):
-        self.save_path = save_path or self._resolve_save_path()
+        self.save_path = save_path or repo_paths.moves_log_path()
         self.game_id = self._init_game_id()
 
     def write(self, fen):
@@ -49,19 +53,6 @@ class FenLogger:
         match = GAME_ID_RE.search(first_line)
         return int(match.group(1)) + 1 if match else 1
 
-    @staticmethod
-    def _resolve_save_path():
-        cwd = Path.cwd().resolve()
-        for candidate in (cwd, *cwd.parents):
-            if (candidate / 'ros2_ws').exists() and (candidate / 'log').exists():
-                log_dir = candidate / 'log'
-                log_dir.mkdir(parents=True, exist_ok=True)
-                return log_dir / 'moves.txt'
-
-        fallback = cwd / 'log' / 'moves.txt'
-        fallback.parent.mkdir(parents=True, exist_ok=True)
-        return fallback
-
 
 class GameNode(Node):
     def __init__(self):
@@ -73,7 +64,9 @@ class GameNode(Node):
 
         self.fen_logger = FenLogger()
 
-        self.cv_client = self.create_client(srv.GetFEN, 'get_fen')
+        self._fen_retry_timer = None
+
+        self.cv_client = ActionClient(self, GetFEN, 'get_fen')
         self.stockfish_client = self.create_client(srv.GetMove, 'get_move')
         self.move_client = self.create_client(srv.Move, 'move')
 
@@ -82,12 +75,12 @@ class GameNode(Node):
         self.timer = self.create_timer(TIMER_PERIOD_SEC, self._tick)
 
     def _wait_for_services(self):
-        services = [
-            ('get_fen', self.cv_client),
+        while not self.cv_client.wait_for_server(timeout_sec=1.0):
+            self.get_logger().info('Action get_fen not available, waiting...')
+        for name, client in [
             ('get_move', self.stockfish_client),
             ('move', self.move_client),
-        ]
-        for name, client in services:
+        ]:
             while not client.wait_for_service(timeout_sec=1.0):
                 self.get_logger().info(f'Service {name} not available, waiting...')
 
@@ -110,13 +103,36 @@ class GameNode(Node):
         return False
 
     def _request_fen(self):
-        request = srv.GetFEN.Request()
-        request.prev_fen = self.fen
-        self._call_service(
-            self.cv_client, request, self._on_fen_received, 'get_fen')
+        goal = GetFEN.Goal()
+        goal.prev_fen = self.fen
+        try:
+            future = self.cv_client.send_goal_async(
+                goal, feedback_callback=self._on_fen_feedback)
+            future.add_done_callback(self._on_goal_accepted)
+        except Exception as e:
+            self.get_logger().error(f'Failed to call get_fen: {e}')
+            self._schedule_fen_retry()
+
+    def _on_goal_accepted(self, future):
+        try:
+            goal_handle = future.result()
+        except Exception as e:
+            self.get_logger().error(f'get_fen goal send failed: {e}')
+            self._schedule_fen_retry()
+            return
+        if not goal_handle.accepted:
+            self.get_logger().error('get_fen goal rejected')
+            self._schedule_fen_retry()
+            return
+        result_future = goal_handle.get_result_async()
+        result_future.add_done_callback(self._on_fen_received)
+
+    def _on_fen_feedback(self, feedback_msg):
+        feedback = feedback_msg.feedback
+        self.get_logger().info(f'get_fen progress: {feedback.step}/8 {feedback.message}')
 
     def _on_fen_received(self, future):
-        result = self._get_result(future, 'get_fen')
+        result = self._get_fen_result(future)
         if result is None:
             return
 
@@ -177,6 +193,37 @@ class GameNode(Node):
             self.get_logger().error(f'{service_name} failed: {e}')
             self._finish_chain()
             return None
+
+    def _get_fen_result(self, future):
+        try:
+            goal_handle_result = future.result()
+            if goal_handle_result is None:
+                raise RuntimeError('get_fen returned None')
+            if goal_handle_result.status != GoalStatus.STATUS_SUCCEEDED:
+                raise RuntimeError(
+                    f'get_fen did not succeed (status {goal_handle_result.status})')
+            result = goal_handle_result.result
+            if result is None:
+                raise RuntimeError('get_fen result is None')
+            return result
+        except Exception as e:
+            self.get_logger().error(f'get_fen failed: {e}')
+            self._schedule_fen_retry()
+            return None
+
+    def _schedule_fen_retry(self):
+        if self._fen_retry_timer is None:
+            self.get_logger().warn('get_fen failed, retrying in '
+                                   f'{FEN_RETRY_DELAY_SEC}s')
+            self._fen_retry_timer = self.create_timer(
+                FEN_RETRY_DELAY_SEC, self._retry_fen)
+
+    def _retry_fen(self):
+        self._fen_retry_timer.cancel()
+        self._fen_retry_timer.destroy()
+        self._fen_retry_timer = None
+        if self.busy:
+            self._request_fen()
 
     def _finish_chain(self):
         self.busy = False

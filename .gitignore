@@ -7,3 +7,12 @@
 /ros2_ws/log/
 /.roo
 /AGENTS.md
+
+# Python
+__pycache__/
+*.pyc
+
+# Runtime artifacts
+/log/*
+!/log/.gitkeep
+/ros2_ws/pipe/

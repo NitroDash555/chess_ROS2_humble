@@ -1,3 +1,5 @@
+import logging
+
 import chess
 
 class FenReconstructionError(Exception):
@@ -12,7 +14,7 @@ class NoValidMoveError(FenReconstructionError):
     """Не найдено ни одного легального хода, объясняющего изменения."""
     pass
 
-def reconstruct_fen(prev_fen, color_fen, default_promotion='q'):
+def reconstruct_fen(prev_fen, color_fen, default_promotion='q', logger=None):
     """
     Восстанавливает реальный FEN на основе предыдущего FEN и цветового FEN.
     Возвращает строку FEN.
@@ -49,7 +51,11 @@ def reconstruct_fen(prev_fen, color_fen, default_promotion='q'):
     #print(removed, added)
     
     if len(removed) == 0 and len(added) == 0:
-        print("Никаких изменений позиции не обнаружено. Возвращаем предыдущий FEN.")
+        if logger is not None:
+            logger.info("Никаких изменений позиции не обнаружено. Возвращаем предыдущий FEN.")
+        else:
+            logging.getLogger('chess_vision').info(
+                "Никаких изменений позиции не обнаружено. Возвращаем предыдущий FEN.")
         return prev_fen
 
 

@@ -3,10 +3,12 @@ import rclpy
 from rclpy.node import Node
 
 from interfaces.srv import Move
+from std_msgs.msg import String
 
 START_COORDS = [0.0, 0.0]
 GRIPPER_GRAB = 0
 GRIPPER_DROP = 1
+COMMAND_TOPIC = '/arduino/command'
 
 
 class move(Node):
@@ -37,15 +39,26 @@ class move(Node):
         )
 
         self.srv = self.create_service(Move, 'move', self.handle_move)
+        self.cmd_pub = self.create_publisher(String, COMMAND_TOPIC, 10)
 
     def handle_move(self, request, response):
-        move = chess.Move.from_uci(request.move)
-        board = chess.Board(request.fen)
+        try:
+            board = chess.Board(request.fen)
+            move = chess.Move.from_uci(request.move)
+        except Exception as e:
+            self.get_logger().error(f'Invalid move or fen: {e}')
+            return response
 
         self.get_logger().info('got move')
         commands = self.break_down_move(move, board)
 
-        # TODO: заменить на отправку команд в Arduino (serial/I2C/CAN)
+        # Публикуем команды в топик arduino_bridge. Пока рука заглушка -
+        # узел просто планирует траекторию и шлёт её в serial.
+        for cmd in commands:
+            msg = String()
+            msg.data = f'MOVE;{cmd}'
+            self.cmd_pub.publish(msg)
+
         self.get_logger().info(f'New move commands: {commands}')
         return response
 
@@ -53,7 +66,6 @@ class move(Node):
         commands = []
 
         self.get_logger().info('starting to break the move down')
-        
 
         if board.is_en_passant(move):
             captured = chess.square(
@@ -70,7 +82,7 @@ class move(Node):
             self._approach(commands, *self.stash, GRIPPER_DROP)
             self._approach(commands, *self.convert(move.from_square), GRIPPER_GRAB)
             self._approach(commands, *self.convert(move.to_square), GRIPPER_DROP)
-        
+
         elif board.is_castling(move):
             rank = chess.square_rank(move.from_square)
             king_file = chess.square_file(move.from_square)
@@ -84,7 +96,7 @@ class move(Node):
             self._approach(commands, *self.convert(move.to_square), GRIPPER_DROP)
             self._approach(commands, *self.convert(rook_from), GRIPPER_GRAB)
             self._approach(commands, *self.convert(rook_to), GRIPPER_DROP)
-            
+
         else:
             self._approach(commands, *self.convert(move.from_square), GRIPPER_GRAB)
             self._approach(commands, *self.convert(move.to_square), GRIPPER_DROP)
@@ -120,6 +132,7 @@ def main(args=None):
         pass
     finally:
         node.destroy_node()
+
 
 if __name__ == '__main__':
     main()

@@ -12,14 +12,15 @@ find_package(ament_cmake REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 find_package(builtin_interfaces REQUIRED)
+find_package(action_msgs REQUIRED)
 
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "srv/GetFEN.srv"
+  "action/GetFEN.action"
   "srv/GetMove.srv"
   "srv/Move.srv"
-  DEPENDENCIES builtin_interfaces
+  DEPENDENCIES builtin_interfaces action_msgs
 )
 
 

@@ -1,0 +1,6 @@
+string prev_fen
+---
+string fen
+---
+int32 step
+string message

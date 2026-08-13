@@ -1,3 +1,4 @@
+import logging
 import os
 
 import cv2
@@ -18,17 +19,21 @@ from .reconstruct_fen import reconstruct_fen, AmbiguousMoveError, NoValidMoveErr
 START_FEN = "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
 
 
-def pipeline(image_path, prev_fen=None, logger=None):
+def pipeline(image_path, prev_fen=None, logger=None, progress_cb=None):
     def log(message):
         if logger is not None:
             logger.info(message)
         else:
-            print(message)
+            logging.getLogger('chess_vision').info(message)
+
+    def report(step, message):
+        log(f"{step}/8 {message}")
+        if progress_cb is not None:
+            progress_cb(step, message)
 
     if not prev_fen:
         prev_fen = START_FEN
 
-    real_fen = prev_fen
     load_dotenv()
     step = 0
     if not os.path.exists("pipe"):
@@ -67,7 +72,7 @@ def pipeline(image_path, prev_fen=None, logger=None):
             img = cv2.cvtColor(lab, cv2.COLOR_LAB2BGR)
             return img
 
-        log("1/8 Image Successfully Read")
+        report(1, "Image Successfully Read")
 
         step = 2
         corners = CornerDetector.detect_corners(original_image)
@@ -76,50 +81,52 @@ def pipeline(image_path, prev_fen=None, logger=None):
             cv2.circle(debug_img, tuple(corner.astype(int)), 10, (0, 0, 255), -1)
         if is_debug():
             cv2.imwrite("pipe/0_corners.jpg", debug_img)
-        log("2/8 Corners Detected")
+        report(2, "Corners Detected")
 
         step = 3
         transformed_image = PerspectiveTransformer.four_point_transform(
             image_path, corners)
         if is_debug():
             cv2.imwrite("pipe/1_warped.jpg", transformed_image)
-        log("3/8 Perspective Transformation Completed")
+        report(3, "Perspective Transformation Completed")
 
         step = 4
         ptsT, ptsL = GridCalculator.plot_grid_on_transformed_image(
             transformed_image)
-        log("4/8 Grid Points Calculated")
+        report(4, "Grid Points Calculated")
 
         step = 5
         original_image = preprocess_for_chess(original_image)
         detections, boxes = ChessPieceMapper.chess_pieces_detector(
             transformed_image)
-        log("5/8 Chess Piece Detections")
+        report(5, "Chess Piece Detections")
 
         step = 6
         GridCalculator.grid_drawer(ptsT, ptsL, detections, boxes)
-        log("6/8 Grid and Pieces Mapped Successfully")
+        report(6, "Grid and Pieces Mapped Successfully")
 
         step = 7
         if hasattr(transformed_image, 'size'):
             transformed_image = np.array(transformed_image)
         predicted_fen = FENConverter.generate_fen(
             ptsT, ptsL, detections, boxes, transformed_image)
-        log("7/8 Generated FEN")
+        report(7, "Generated FEN")
 
         step = 8
         try:
-            real_fen = reconstruct_fen(prev_fen, predicted_fen)
+            real_fen = reconstruct_fen(prev_fen, predicted_fen, logger=logger)
             log(f"Real FEN: {real_fen}")
         except AmbiguousMoveError as e:
-            log(f"Ambiguous move: {e}, keeping previous FEN")
+            log(f"Ambiguous move: {e}")
+            raise
         except NoValidMoveError as e:
-            log(f"Cannot reconstruct: {e}, keeping previous FEN")
-        log("8/8 FEN Formatted")
+            log(f"Cannot reconstruct: {e}")
+            raise
+        report(8, "FEN Formatted")
         log(f"FEN: {real_fen}")
         return real_fen
 
     except Exception as e:
         log(f"{error_messages.get(step, 'An unknown error occurred')} "
             f"Details: {e}")
-        return real_fen
+        raise
