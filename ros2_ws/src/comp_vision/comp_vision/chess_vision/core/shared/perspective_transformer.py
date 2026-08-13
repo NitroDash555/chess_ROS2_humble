@@ -5,6 +5,7 @@ from shapely.geometry import Polygon
 import os
 
 from ...debug import is_debug
+from chess_common import repo_paths
 
 class PerspectiveTransformer:
     @staticmethod
@@ -44,7 +45,7 @@ class PerspectiveTransformer:
         warped = cv2.warpPerspective(image, M, (maxWidth, maxHeight))
         
         if is_debug():
-            output_path = os.path.join('pipe', '02_transformed.png')
+            output_path = os.path.join(repo_paths.pipe_dir(), '02_transformed.png')
             cv2.imwrite(output_path, cv2.cvtColor(warped, cv2.COLOR_RGB2BGR))
         return Image.fromarray(warped, "RGB")
 

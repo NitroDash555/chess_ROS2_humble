@@ -5,6 +5,7 @@ from PIL import Image
 from shapely.geometry import Polygon
 from . import PiecesDetector, PerspectiveTransformer
 from ...debug import is_debug
+from chess_common import repo_paths
 
 class ChessPieceMapper:
 
@@ -56,7 +57,7 @@ class ChessPieceMapper:
             
             # Save the image
             debug_image = Image.fromarray(img_array)
-            debug_image.save('pipe/04_pieces.png')
+            debug_image.save(repo_paths.pipe_dir() / '04_pieces.png')
 
         return detections, boxes
 

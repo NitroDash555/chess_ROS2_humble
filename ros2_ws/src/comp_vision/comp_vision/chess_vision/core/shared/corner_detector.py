@@ -2,6 +2,7 @@ from ultralytics import YOLO
 from os import path
 from .perspective_transformer import PerspectiveTransformer
 from ...debug import is_debug
+from chess_common import repo_paths
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -28,8 +29,9 @@ class CornerDetector:
             from PIL import Image
             import numpy as np
             
-            Image.fromarray(image[..., ::-1] if image.shape[-1] == 3 else image).save("pipe/00_image.png")
-            Image.fromarray(plotted_image[..., ::-1]).save("pipe/01_corners.png")
+            pipe = repo_paths.pipe_dir()
+            Image.fromarray(image[..., ::-1] if image.shape[-1] == 3 else image).save(pipe / "00_image.png")
+            Image.fromarray(plotted_image[..., ::-1]).save(pipe / "01_corners.png")
         
         boxes = results[0].boxes
         if len(boxes) < 4: # type: ignore

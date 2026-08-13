@@ -1,5 +1,7 @@
 from . import PerspectiveTransformer
 from ...debug import is_debug
+from chess_common import repo_paths
+import os
 import numpy as np
 import cv2
 
@@ -34,7 +36,7 @@ class GridCalculator:
                 cv2.line(debug_img, (int(a[0]), int(a[1])), (int(b[0]), int(b[1])), (0, 0, 255), 2)
             for a, b in zip(ptsT, interpolate(BL, BR)):
                 cv2.line(debug_img, (int(a[0]), int(a[1])), (int(b[0]), int(b[1])), (0, 0, 255), 2)
-            cv2.imwrite('pipe/03_grid.png', cv2.cvtColor(debug_img, cv2.COLOR_RGB2BGR))
+            cv2.imwrite(os.path.join(repo_paths.pipe_dir(), '03_grid.png'), cv2.cvtColor(debug_img, cv2.COLOR_RGB2BGR))
 
         return ptsT, ptsL
     
@@ -100,7 +102,7 @@ class GridCalculator:
 
         plt.imshow(img_copy)
         plt.axis('off')
-        plt.savefig('pipe/05_grid_with_pieces.png', bbox_inches='tight', pad_inches=0)
+        plt.savefig(os.path.join(repo_paths.pipe_dir(), '05_grid_with_pieces.png'), bbox_inches='tight', pad_inches=0)
         plt.close()
 
            

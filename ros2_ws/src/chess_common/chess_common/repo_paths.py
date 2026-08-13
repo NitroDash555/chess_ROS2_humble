@@ -26,6 +26,10 @@ def image_path(filename: str = 'z.jpg') -> Path:
     return image_dir() / filename
 
 
+def pipe_dir() -> Path:
+    return ensure_dir(find_repo_root() / 'pipe')
+
+
 def log_dir() -> Path:
     return ensure_dir(find_repo_root() / 'log')
 

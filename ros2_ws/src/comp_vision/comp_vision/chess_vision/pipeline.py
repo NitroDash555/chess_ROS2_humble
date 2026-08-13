@@ -1,10 +1,10 @@
 import logging
-import os
 
 import cv2
 import numpy as np
 from dotenv import load_dotenv
 
+from chess_common import repo_paths
 from .core.constants import error_messages
 from .core.shared import (
     CornerDetector,
@@ -36,8 +36,7 @@ def pipeline(image_path, prev_fen=None, logger=None, progress_cb=None):
 
     load_dotenv()
     step = 0
-    if not os.path.exists("pipe"):
-        os.makedirs("pipe")
+    pipe_dir = repo_paths.pipe_dir()
 
     try:
         step = 1
@@ -80,14 +79,14 @@ def pipeline(image_path, prev_fen=None, logger=None, progress_cb=None):
         for corner in corners:
             cv2.circle(debug_img, tuple(corner.astype(int)), 10, (0, 0, 255), -1)
         if is_debug():
-            cv2.imwrite("pipe/0_corners.jpg", debug_img)
+            cv2.imwrite(str(pipe_dir / "0_corners.jpg"), debug_img)
         report(2, "Corners Detected")
 
         step = 3
         transformed_image = PerspectiveTransformer.four_point_transform(
             image_path, corners)
         if is_debug():
-            cv2.imwrite("pipe/1_warped.jpg", transformed_image)
+            cv2.imwrite(str(pipe_dir / "1_warped.jpg"), transformed_image)
         report(3, "Perspective Transformation Completed")
 
         step = 4

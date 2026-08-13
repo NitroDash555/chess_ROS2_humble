@@ -83,7 +83,7 @@ Arduino --serial--> arduino_bridge --(topic /arduino/feedback, в планах)-
   - при ошибке пайплайна — `goal_handle.abort()` (раньше молча возвращал `prev_fen`);
   - принимает `prev_fen` от game для реконструкции хода;
   - YOLO-модели (углы + фигуры) грузятся при импорте из `chess_vision/assets/models/`;
-  - отладочные картинки пишутся в `./pipe` при `DEBUG=true`.
+  - отладочные картинки пишутся в `<repo>/pipe/` при `DEBUG=true` (путь через `chess_common`).
 
 ### stockfish_node
 - Тип: ament_python
@@ -135,7 +135,7 @@ Arduino --serial--> arduino_bridge --(topic /arduino/feedback, в планах)-
 - Особенности:
   - move-узлу передаётся `config/board_calibration.yaml` (секция `/move`, соответствует имени узла);
   - `ROS_LOG_DIR` указывается на `log/`;
-  - `DEBUG=true` включает отладочный рендер comp_vision (в `./pipe`);
+  - `DEBUG=true` включает отладочный рендер comp_vision (в `<repo>/pipe/`);
   - пути к log/ и калибровке берутся из `chess_common`.
   - `arduino_bridge` в launch пока не добавлен (добавить, когда появится плата).
 
@@ -164,7 +164,7 @@ Arduino --serial--> arduino_bridge --(topic /arduino/feedback, в планах)-
     - start/
     - stockfish_node/
   - scripts/ (установка зависимостей, udev-правило для Arduino)
-  - build/, install/, log/, pipe/ (артефакты colcon и отладочные картинки)
+  - build/, install/, log/ (артефакты colcon) и pipe/ (отладочные картинки comp_vision)
 
 ## 5. Подготовка окружения (Dev Container)
 

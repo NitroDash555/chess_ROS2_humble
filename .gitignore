@@ -15,4 +15,4 @@ __pycache__/
 # Runtime artifacts
 /log/*
 !/log/.gitkeep
-/ros2_ws/pipe/
+/pipe/
